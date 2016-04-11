@@ -44,5 +44,18 @@ void decenas(int n){
 int main()
 {
 
+    int i, n;
+    while(1){
+        scanf("%d", &n);
+        if(n==0)
+            break;
+        R[I]=R[V]=R[X]=R[L]=R[C]=0;
+        for(i=1; i<=n; i++){
+            unidades(i%10);
+            decenas(i/10);
+        }
+        printf("%d: %d i, %d v, %d x, %d l, %d c\n", n, R[I], R[V], R[X], R[L], R[C]);
+    }
+
     return 0;
 }
